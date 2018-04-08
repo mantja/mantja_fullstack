@@ -1,0 +1,11 @@
+käyttäjä->selain:
+note left of selain
+käyttäjä lisää uuden muistiinpanon ja
+painaa "Talleta"
+end note
+selain->palvelin: POST fullstack-exampleapp.herokuapp.com/new_note_spa
+note right of selain
+palvelin lisää uuden rivin JSON-tiedostoon ja päivittää HTML:n.
+HTML-sivulle ilmestyy uusi rivi näkyviin
+end note
+palvelin->selain: status 201, palvelin ilmoittaa onnistumisesta

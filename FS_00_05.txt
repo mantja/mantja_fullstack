@@ -1,0 +1,17 @@
+käyttäjä->selain:
+note left of selain
+käyttäjä kirjoittaa osoitteen
+fullstack-exampleapp.herokuapp.com/spa
+end note
+selain->palvelin: GET fullstack-exampleapp.herokuapp.com/spa
+palvelin->selain: status 200, palvelin palauttaa HTML-sivun
+selain->palvelin: GET fullstack-exampleapp.herokuapp.com/main.css
+palvelin->selain: status 200, viitattu CSS-tiedosto
+selain->palvelin: GET fullstack-exampleapp.herokuapp.com/spa.js
+palvelin->selain: status 200, JavaScript joka muodostaa listan
+selain->palvelin: GET fullstack-exampleapp.herokuapp.com/data.json
+palvelin->selain: status 200, JSON-data josta lista muodostettaan
+note left of selain
+ näytetään HTML-sivu, jossa esitetään kaikki
+ muistiinpanot järjestämättömänä listana.
+end note
